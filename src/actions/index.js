@@ -27,6 +27,6 @@ export function signinUser({ email, password }) {
 export function authError(error) {
   return {
     type: AUTH_ERROR,
-    PAYLOAD: error
+    payload: error
   };
 }

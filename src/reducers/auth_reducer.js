@@ -12,8 +12,6 @@ export default function(state = {}, action) {
       return { ...state, authenticated: false};
     case AUTH_ERROR:
       return { ...state, error: action.payload };
-    default:
-      return state
-
   }
+    return state;
 }
